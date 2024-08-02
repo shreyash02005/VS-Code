@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almonds</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="../styles.css"> -->
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+section {
+    flex-basis: 48%;
+    margin-bottom: 2rem;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 48%;
+}
+
+.product-card img {
+    width: 100%;
+}
+
+.add-to-cart {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+}
+
+#cart {
+    flex-basis: 24%;
+    background-color: white;
+}
+
+.cart-container {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#checkout {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+h2 {
+    /* background-color: white; */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Almonds</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color: white;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/home.html" style="color: white;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">Link</a>
+              </li>
+              <!-- Example single danger button -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Action
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">Help</a>
+              </li>
+            </ul>
+            <i class="bi bi-brightness-high-fill"></i>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" style="color: white;">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>    
+    <main>
+        <section>
+            <img src="https://imgs.search.brave.com/rBLB6bWznod_h526w0EgGpxn2yc2WrTJ1jwpRNsgyIo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTUz/NzExMDU2L3Bob3Rv/L2FsbW9uZHMuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVR3/X0RSSTRhQkRwNjRB/YksxUFRRNm9fR0dS/bmhpMkljclVvTXd5/ZkQ2dVE9" alt="Almonds">
+            <h2>Almonds</h2>
+            <p> &#8377;50</p>
+            <button class="btn btn-primary" type="submit">Buy Now</button>
+        </section>
+        <section id="cart">
+            <h2>Natural Premium California Dried Almonds 200g Pack Pouch | Premium Badam | High in Fiber & Boost Immunity | Real Nuts | Gluten Free</h2>
+            <hr>
+            <br>
+            <div class="cart-container">
+                <!-- Cart items will be displayed here -->
+                <b>About this item</b>
+                <br><br>
+                <ul>
+                <li>Add 100% real nuts into your diet can contribute to a healthy lifestyle.</li>
+                <li>Packed in food safe material</li>
+                <li>Open Secret Whole Almonds are crunchy, crispy and have a nutty flavour</li>
+                <li>Fresh almonds that are hygienically packed in facility meeting FSSAI food safety standards</li>
+                <li>allergen_information: Almonds.</li>
+                </ul>
+            </div>
+            <button class="btn btn-primary" type="submit">Add to cart</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Vikreta</p>
+    </footer>
+    <script src="../scripts.js"></script>
+</body>
+</html>
